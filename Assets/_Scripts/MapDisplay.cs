@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MapDisplay : MonoBehaviour
-{
+public class MapDisplay : MonoBehaviour {
     [SerializeField] private Renderer textureRenderer;
 
-    public void DrawNoiseMap(float[,] noiseMap)
-    {
+    public void DrawNoiseMap(float[,] noiseMap) {
         int width = noiseMap.GetLength(0);
         int height = noiseMap.GetLength(1);
 
@@ -15,10 +13,8 @@ public class MapDisplay : MonoBehaviour
 
         Color[] colorMap = new Color[width * height];
 
-        for(int y=0; y<height; y++)
-        {
-            for(int x=0; x<width; x++)
-            {
+        for(int y=0; y<height; y++) {
+            for(int x=0; x<width; x++) {
                 colorMap[y * width + x] = Color.Lerp(Color.black, Color.white, noiseMap[x, y]);
             }
         }
