@@ -208,13 +208,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -9.536585, y: 748.45, z: 0.01602602}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -504,7 +504,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 1, z: 100}
+  m_LocalScale: {x: 160, y: 1, z: 90}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -567,14 +567,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebc32e033acd8c44ab2f9ec8fac39af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapWidth: 100
-  mapHeight: 100
-  noiseScale: 27
+  drawMode: 1
+  scrollSpeed: -1
+  mapWidth: 160
+  mapHeight: 90
+  noiseScale: 32
   octaves: 4
   persistance: 0.5
-  lacunarity: 2.23
+  lacunarity: 2
   seed: 0
-  offset: {x: 0, y: 0}
+  offset: {x: 22.1, y: 9.12}
+  regions:
+  - name: Water Deep
+    height: 0.25
+    color: {r: 0, g: 0.3971982, b: 1, a: 1}
+  - name: Water Shallow
+    height: 0.4
+    color: {r: 0.15566039, g: 0.49008524, b: 1, a: 1}
+  - name: Sand
+    height: 0.45
+    color: {r: 0.745283, g: 0.699499, b: 0.31287822, a: 1}
+  - name: Grass
+    height: 0.55
+    color: {r: 0.27619544, g: 0.6698113, b: 0.26223743, a: 1}
+  - name: Grass 2
+    height: 0.6
+    color: {r: 0.19332995, g: 0.46226418, b: 0.18534178, a: 1}
+  - name: Rock
+    height: 0.7
+    color: {r: 0.5471698, g: 0.43059593, b: 0.19357423, a: 1}
+  - name: Rock 2
+    height: 0.9
+    color: {r: 0.3584906, g: 0.28211713, b: 0.1268245, a: 1}
+  - name: Snow
+    height: 1
+    color: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
   autoUpdate: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -25,8 +25,8 @@ public static class Noise {
         float halfHeight = mapHeight / 2f;
 
 
-        for(int y=0; y<mapHeight; y++) {
-            for(int x=0; x<mapWidth; x++) {
+        for(int x=0; x<mapWidth; x++) {
+            for(int y=0; y<mapHeight; y++) {
                 float amplitude = 1;
                 float frequency = 1;
                 float noiseHeight = 0;
@@ -53,8 +53,8 @@ public static class Noise {
             }
         }
 
-        for (int y = 0; y < mapHeight; y++) {
-            for (int x = 0; x < mapWidth; x++) {
+        for (int x = 0; x < mapWidth; x++) {
+            for (int y = 0; y < mapHeight; y++) {
                 noiseMap[x,y] = Mathf.InverseLerp(minNoiseHeight, maxNoiseHeight, noiseMap[x,y]);
             }
         }
